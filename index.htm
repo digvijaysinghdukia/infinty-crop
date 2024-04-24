@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinity Corporation</title>
     <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+    <!-- emailjs script link -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function(){
-            
-        })();
-    </script>
     <style>
         
         body{
@@ -22,6 +18,7 @@
             position: relative;
             overflow-x: hidden;
         }
+/*  site navbar for desktop and mobile  */
         nav{
             width: 13rem;
             height: 100vh;
@@ -57,6 +54,7 @@
         nav .active {
             color: #714da6;
         }
+/*  mobile navbar style */
         .Mobile-nav{
             display: none;
         }
@@ -64,6 +62,7 @@
             width: 100%;
             height: auto;
         }
+/* top header bar ( infinty crop.) */
         main .top-bar{
             width: 100%;
             height: 5rem;
@@ -79,6 +78,7 @@
             width: auto;
             height: 2.5rem;
         }
+/* all section and cards  style  */
         main section{
             width: 100%;
             height: 100%;
@@ -124,6 +124,7 @@
             height: 90%;
             color: rgb(44, 44, 44);
         }
+/* card button css */
         .cssbuttons-io-button {
             background: #a370f0;
             color: white;
@@ -180,7 +181,7 @@
             .cssbuttons-io-button:active .icon {
             transform: scale(0.95);
             }
-
+/*  social media links    */
             .main {
             display: flex;
             flex-direction: column;
@@ -315,7 +316,7 @@
             }
 
 
-
+/* contect from */
             .form {
             position: relative;
             display: flex;
@@ -375,7 +376,7 @@
             color: #fff;
             cursor: pointer;
             }
-            
+/* responsive web media quarry */
             @media only screen and (max-width: 768px) {
                 main section{ 
                     grid-template-columns: repeat(1 , 1fr);
@@ -420,8 +421,9 @@
     </style>
 </head>
 <body>
-
+<!-- web desktop navbar  -->
     <nav>
+    <!--    navbar links      -->
         <a href="#" class="nav-active" id="navLink1" onclick="showSection(1)" style="color: #a370f0;">
             <img src="./media/account_balance_FILL0_wght400_GRAD0_opsz48.svg" alt="">
             <span>Finance</span>
@@ -443,13 +445,14 @@
             <span>About Us</span>
         </a>
     </nav>
-    
+<!--     All section tags in main tag -->
     <main>
+    <!--     website top logo bar ( infinty crop. name)     -->
         <div class="top-bar">
             <img src="./media/infLogo.png" alt="">
             <h2>Infinity Corporation</h2>
         </div>
-
+    <!--   finance section and cards   -->
         <section id="section1" class="section" style="display: grid;">
                 <div class="card">
                     <img src="./media/4221578.png" alt="">
@@ -572,6 +575,7 @@
                 </div>
                 
         </section>
+        <!--   proparty section and cards   -->
         <section id="section2" class="section" style="display: none;">
             <div class="card">
                 <img src="./media/flat.png" alt="">
@@ -678,6 +682,7 @@
             </div>
             
         </section>
+        <!--   it service section and cards   -->
         <section id="section3" class="section" style="display: none;">
             <div class="card">
                 <img src="./media/app1.png" alt="">
@@ -815,6 +820,7 @@
                 </div>
             </div>
         </section>
+        <!--   contect  section and cards   -->
         <section id="section4" class="section" style="display: none;">
             <div class="main">
                 <div class="up">
@@ -838,7 +844,7 @@
                 </button>
                 </div>
             </div>
-
+<!--     contect us page from     -->
             <form id="myForm" class="form">
                 <div class="title">Contact us</div>
                 <input type="text" id="name" placeholder="Your Full Name" class="input">
@@ -848,7 +854,7 @@
                 <button type="button" onclick="sendEmail()">Submit</button>
             </form>
         </section>
-
+<!-- mobile navbar -->
     <nav class="Mobile-nav" >
         <a href="#" class="nav-mobile-active" id="navMobLink1" onclick="showSection(1)" style="color: #a370f0;">
             <img src="./media/account_balance_FILL0_wght400_GRAD0_opsz48.svg" alt="">
@@ -875,6 +881,7 @@
     </main>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
+        
         function showSection(sectionNum) {
           // Hide all sections
           var sections = document.getElementsByClassName("section");
@@ -906,7 +913,7 @@
 
 
 
-        // Function to open WhatsApp chat for Finance
+        // Function to open WhatsApp chat 
         function openWhatsAppChat() {
             // Replace 'XXXXXXXXXXXXX' with your actual phone number including the country code
             var phoneNumber = '+917597363238';
@@ -922,7 +929,7 @@
         }
         
 
-
+// emailjs fun
  
         function sendEmail() {
             var templateParams = {
